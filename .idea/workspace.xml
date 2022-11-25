@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffebcc4c-604a-4ffb-b28a-379e07e8e7bb" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/src/day2/Task1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day2/Task2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day2/Task3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/day2/Task4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day3/Task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day3/Task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day3/Task3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +43,26 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Task1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="day3.Task1" />
+      <module name="JMarathon20" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Task1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
