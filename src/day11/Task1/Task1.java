@@ -6,32 +6,32 @@ public class Task1 {
 
         int initialOrderCount = 0;
         int initialBalance = 0;
-        Warehouse wh = new Warehouse(initialOrderCount, initialBalance);
+        Warehouse warehouse = new Warehouse(initialOrderCount, initialBalance);
 
 
-        Picker Cameron = new Picker();
-        Cameron.setLocation(wh);
-        Cameron.doWork();
-        System.out.printf("Cam earned %d\r\n", Cameron.getSalary());
+        Picker cameron = new Picker();
+        cameron.setLocation(warehouse);
+        cameron.doWork();
+        System.out.printf("Cam earned %d\r\n", cameron.getSalary());
 
-        Courier Jim = new Courier();
-        Jim.setLocation(wh);
-        Jim.doWork();
-        System.out.printf("Jim earned %d\r\n", Jim.getSalary());
+        Courier jim = new Courier();
+        jim.setLocation(warehouse);
+        jim.doWork();
+        System.out.printf("Jim earned %d\r\n", jim.getSalary());
 
         for(int i = 0; i <= 1500; i++){
-            Cameron.doWork();
-            Jim.doWork();
+            cameron.doWork();
+            jim.doWork();
         }
 
-        Jim.bonus();
-        Cameron.bonus();
+        jim.bonus();
+        cameron.bonus();
 
-        System.out.printf("Wh metrics: income: %d, orders: %d\r\n", wh.getBalance(), wh.getOrderCount());
-        System.out.printf("Cam earned %d\r\n", Cameron.getSalary());
-        System.out.printf("Jim earned %d\r\n", Jim.getSalary());
+        System.out.printf("Wh metrics: income: %d, orders: %d\r\n", warehouse.getBalance(), warehouse.getOrderCount());
+        System.out.printf("Cam earned %d\r\n", cameron.getSalary());
+        System.out.printf("Jim earned %d\r\n", jim.getSalary());
 
-        System.out.println(wh + " " + Cameron + " " + Jim);
+        System.out.println(warehouse + " " + cameron + " " + jim);
 
     }
 
