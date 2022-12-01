@@ -10,7 +10,7 @@ public class Task1 {
 
 
         String currentFilename = "";
-        String sourceFilename = "day15_shoes.csv";
+        String sourceFilename = "src/day15_shoes.csv";
         currentFilename = sourceFilename;
         File source = new File(sourceFilename);
 
