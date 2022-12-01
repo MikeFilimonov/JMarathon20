@@ -10,7 +10,7 @@ public class Task2 {
 
     public static void main(String[] args) {
 
-        String filename = "people.txt";
+        String filename = "src/people.txt";
         parseFileToStringList(filename);
     }
 
@@ -41,6 +41,7 @@ public class Task2 {
 
             }
 
+            scanner.close();
             System.out.println(output);
 
         } catch (FileNotFoundException e) {

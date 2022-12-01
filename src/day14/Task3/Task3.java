@@ -39,6 +39,7 @@ public class Task3 {
                 }
 
             }
+             inputReader.close();
 
         } catch (FileNotFoundException e) {
             System.out.printf("File %s not found", filename);

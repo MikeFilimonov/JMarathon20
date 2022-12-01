@@ -9,9 +9,9 @@ public class Task1 {
 
     public static void main(String[] args) {
 
-        checkTheFileUp("sample.txt");
+        checkTheFileUp("src/sample.txt");
 
-        checkTheFileUp("faulty.txt");
+        checkTheFileUp("src/faulty.txt");
         checkTheFileUp("smaple.txt");
 
     }
@@ -32,6 +32,8 @@ public class Task1 {
                 sum+= scanner.nextInt();
                 numberCount++;
             }
+
+            scanner.close();
 
             if (numberCount != 10){
                 throw new IllegalArgumentException();
