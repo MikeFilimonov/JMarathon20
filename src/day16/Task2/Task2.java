@@ -12,9 +12,9 @@ public class Task2 {
     public static final String filenameOfInts = "src/day16/Task2/randomNums.txt";
     public static final String filenameOfDoubles = "src/day16/Task2/meanDoubles.txt";
 
-    private static final int blockCount = 4;
+    private static final int blockCount = 20;
 
-    private static final int numberOfInputElements = 12;
+    private static final int numberOfInputElements = 1000;
     public static void main(String[] args) {
 
         fileWithRandomNums();
