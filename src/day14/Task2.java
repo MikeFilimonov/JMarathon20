@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Task2 {
 
     public static int fieldCount = 2;
+    public static int ageLowerBound  = 0;
     public static void main(String[] args) {
 
         String filename = "src/people.txt";
@@ -31,7 +32,7 @@ public class Task2 {
                 if (nameAndAge.length == fieldCount){
 
                     age = Integer.parseInt(nameAndAge[1]);
-                    if(age < 0){
+                    if(age < ageLowerBound){
                         System.out.printf("Faulty age provided for %s\r\n",
                                 nameAndAge[0]);
                         throw new NumberFormatException();
