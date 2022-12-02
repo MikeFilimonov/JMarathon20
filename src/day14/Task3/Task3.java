@@ -27,7 +27,6 @@ public class Task3 {
                 String line = inputReader.nextLine();
                 String[] inputData = line.split(" ");
                 if (inputData.length == Person.fieldCount) {
-
                     int age = Integer.parseInt(inputData[1]);
                     if (age < Person.ageLowerBound) {
                         System.out.printf("Odd age set for %s", inputData[0]);
