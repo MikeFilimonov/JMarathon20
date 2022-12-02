@@ -33,6 +33,6 @@ MessageDatabase.
   * статическое свойство для хранение сообщений - messages (List<Message>)
 
 и методы, оба статические:
- * newMessage(User sender, User recipient, String text)  - добавляет сообщение в историю сообщений.
+ * addMessage(User sender, User recipient, String text)  - добавляет сообщение в историю сообщений.
  * chatHistory(User a, User b) - выводит историю переписки двух пользователей, каждый из которых может быть
 и отправителем и получателем.

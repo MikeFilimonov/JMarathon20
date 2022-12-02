@@ -13,15 +13,15 @@ public class MessageDatabase {
 
     }
 
-    public static void showChatHistory(User person1, User person2){
+    public static void showChatHistory(User sender, User recipient){
 
 
         for (Message message: messages) {
             if (
-                    (message.getSender().getUsername().equals(person1.getUsername())
-                && message.getRecipient().getUsername().equals(person2.getUsername()))
-                ||(message.getSender().getUsername().equals(person2.getUsername())
-                    && message.getRecipient().getUsername().equals(person1.getUsername()))
+                    (message.getSender().getUsername().equals(sender.getUsername())
+                && message.getRecipient().getUsername().equals(recipient.getUsername()))
+                ||(message.getSender().getUsername().equals(recipient.getUsername())
+                    && message.getRecipient().getUsername().equals(sender.getUsername()))
             ){
                 System.out.printf("Sender: %s : text: %s\n", message.getSender(), message.getText());
                 System.out.println("-------------------------------------------------");

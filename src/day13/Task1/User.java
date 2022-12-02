@@ -8,16 +8,17 @@ public class User {
     private String username;
     private List<User> subscriptions;
 
-    public String getUsername() {
-        return username;
-    }
-
     public User(String username) {
         this.username = username;
         this.subscriptions = new ArrayList<>();
     }
 
-    public void subscribe(User newFriend){
+    public String getUsername() {
+        return username;
+    }
+
+
+    public void addFollower(User newFriend){
 
         if (!subscriptions.contains(newFriend))
             subscriptions.add(newFriend);
