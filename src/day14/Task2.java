@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class Task2 {
 
+    public static int fieldCount = 2;
     public static void main(String[] args) {
 
         String filename = "src/people.txt";
@@ -27,7 +28,7 @@ public class Task2 {
                 String line = scanner.nextLine();
                 String[] nameAndAge = line.split(" ");
                 int age = 0;
-                if (nameAndAge.length == 2){
+                if (nameAndAge.length == fieldCount){
 
                     age = Integer.parseInt(nameAndAge[1]);
                     if(age < 0){
