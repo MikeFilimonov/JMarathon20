@@ -2,6 +2,8 @@ package day14.Task3;
 
 public class Person {
 
+    public static final int fieldCount = 2;
+    public static int ageLowerBound  = 0;
     private String name;
     private int age;
 

@@ -10,7 +10,7 @@ public class Task3 {
 
     public static void main(String[] args) {
 
-        String filename = "people.txt";
+        String filename = "src/people.txt";
         List<Person> result = parseFileToObjList(filename);
         System.out.println(result);
     }
@@ -26,10 +26,10 @@ public class Task3 {
 
                 String line = inputReader.nextLine();
                 String[] inputData = line.split(" ");
-                if (inputData.length == 2) {
+                if (inputData.length == Person.fieldCount) {
 
                     int age = Integer.parseInt(inputData[1]);
-                    if (age < -1) {
+                    if (age < Person.ageLowerBound) {
                         System.out.printf("Odd age set for %s", inputData[0]);
                         throw new NumberFormatException();
                     }
@@ -42,13 +42,11 @@ public class Task3 {
              inputReader.close();
 
         } catch (FileNotFoundException e) {
-            System.out.printf("File %s not found", filename);
+            System.out.printf("File %s not found\n", filename);
         }
         catch (NumberFormatException e){
-            System.out.println("Faulty input data");
+            System.out.println("Faulty input data.\n");
         }
-
-
 
         return result;
     }
