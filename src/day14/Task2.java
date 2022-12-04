@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class Task2 {
 
-    public static int fieldCount = 2;
-    public static int ageLowerBound  = 0;
+    private static final int fieldCount = 2;
+    private static final int ageLowerBound  = 0;
     public static void main(String[] args) {
 
         String filename = "src/people.txt";
