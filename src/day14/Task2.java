@@ -8,8 +8,8 @@ import java.util.Scanner;
 
 public class Task2 {
 
-    private static final int fieldCount = 2;
-    private static final int ageLowerBound  = 0;
+    private static final int FIELD_COUNT = 2;
+    private static final int AGE_LOWER_BOUND = 0;
     public static void main(String[] args) {
 
         String filename = "src/people.txt";
@@ -29,10 +29,10 @@ public class Task2 {
                 String line = scanner.nextLine();
                 String[] nameAndAge = line.split(" ");
                 int age = 0;
-                if (nameAndAge.length == fieldCount){
+                if (nameAndAge.length == FIELD_COUNT){
 
                     age = Integer.parseInt(nameAndAge[1]);
-                    if(age < ageLowerBound){
+                    if(age < AGE_LOWER_BOUND){
                         System.out.printf("Faulty age provided for %s\r\n",
                                 nameAndAge[0]);
                         throw new NumberFormatException();
